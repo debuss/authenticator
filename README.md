@@ -6,7 +6,7 @@ A simple yet useful MFA (2-Step Verification) token generator for your desktop.
 
 Available on Windows, Mac OSx and Linux so you do not need to grab your phone and check Google Authenticator anymore, just *copy/paste* it from Authenticator.
 
-![Authenticator](/home/debuss-a/Documents/GitHub/authenticator/screenshot.png  "Authenticator")
+![Authenticator](./screenshot.png  "Authenticator")
 
 ## How does it work ?
 
