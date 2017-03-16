@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Authenticator</title>
+    <link rel="stylesheet" href="./css/theme.css" type="text/css" media="all">
+    <script>window.$ = window.jQuery = require('jQuery');</script>
+    <script type="text/javascript" src="./js/authenticator.js"></script>
+</head>
+<body>
+    <h1 class="title">
+        Authenticator
+        <small class="float-right"><img src="./img/information.png" id="show-informations" title="Settings" class="btn" /></small>
+    </h1>
+
+    <div id="main">
+        <div id="container">
+            <div id="form" class="block">
+                <input type="text" class="name w40" placeholder="Name" value="">
+                <input type="text" class="secret w40" placeholder="Secret Key" value="">
+                <button type="button" class="btn w15 float-right" onclick="addNewSecret()">Add</button>
+                <div class="clearfix">&nbsp;</div>
+            </div>
+        </div>
+
+        <div id="block-model" class="block" style="display: none;">
+            <div class="col-lg-1-2">
+                <h1 class="token">TOKEN</h1>
+                <div class="name">NAME</div>
+            </div>
+            <div class="col-lg-1-2">
+                <div class="col-lg-4-5 timer"><progress max="29" value="0"></progress></div>
+                <div class="col-lg-1-5">
+                    <div class="float-right options">
+                        <img src="./img/up.png" class="up" title="Up" /><br />
+                        <img src="./img/cross.png" class="delete" title="Delete" /><br />
+                        <img src="./img/down.png" class="down" title="Down" />
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" class="secret" value="" />
+            <div class="clearfix">&nbsp;</div>
+        </div>
+    </div>
+
+    <div id="informations" style="display: none;">
+        <div class="container">
+            <div class="block">
+                <h2>About</h2>
+                <p>
+                    Authenticator,<br />
+                    A simple yet useful MFA (2-Step Verification) token generator.
+                </p>
+                <p>
+                    <strong>Version :</strong> <script>document.write(require('electron').remote.app.getVersion())</script><br />
+                    <strong>Made with : </strong> <a href="#" onclick="shell.openExternal('http://electron.atom.io')">Electron</a><br />
+                    <strong>And packages : </strong>
+                    <ul>
+                        <li><a href="#" onclick="shell.openExternal('https://www.npmjs.com/package/base-64')">base-64</a></li>
+                        <li><a href="#" onclick="shell.openExternal('https://www.npmjs.com/package/electron-json-config')">electron-json-config</a></li>
+                        <li><a href="#" onclick="shell.openExternal('https://www.npmjs.com/package/jquery')">jQuery</a></li>
+                        <li><a href="#" onclick="shell.openExternal('https://www.npmjs.com/package/speakeasy')">speakeasy</a></li>
+                        <li><a href="#" onclick="shell.openExternal('https://www.npmjs.com/package/utf8')">utf8</a></li>
+                    </ul>
+                    <strong>By :</strong> <a href="#" onclick="shell.openExternal('http://debuss-a.me')">Alexandre Debusschere</a><br />
+                    <strong>GitHub :</strong> <a href="#" onclick="shell.openExternal('https://github.com/debuss/authenticator')">https://github.com/debuss/authenticator</a><br />
+                    <strong>License :</strong> <a href="#" onclick="shell.openExternal('https://raw.githubusercontent.com/debuss/authenticator/master/LICENSE')">MIT</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

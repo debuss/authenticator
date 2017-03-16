@@ -1,0 +1,27 @@
+{
+  "name": "Authenticator",
+  "version": "0.1.0",
+  "description": "A simple yet useful MFA (2-Step Verification) token generator.",
+  "main": "main.js",
+  "scripts": {
+      "start": "electron ."
+  },
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "electron-json-config": "^1.4.0",
+    "jQuery": "^1.7.4",
+    "speakeasy": "^2.0.0",
+    "utf8": "^2.1.2"
+  },
+  "devDependencies": {
+      "electron": "^1.6.2"
+  },
+  "repository": "https://github.com/debuss/authenticator",
+  "keywords": [
+    "Electron",
+    "Authentication",
+    "MFA"
+  ],
+  "author": "Alexandre Debusschere",
+  "license": "MIT"
+}

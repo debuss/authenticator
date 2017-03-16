@@ -1,0 +1,143 @@
+/**
+ * @author Alexandre Debusschere
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: sans-serif;
+}
+
+progress {
+    width: 100%;
+    height: 2rem;
+}
+
+a {
+    color: #00aff0;
+    text-decoration: none;
+}
+
+h1.title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    background-color: white;
+    padding: 2rem 1rem;
+    color: #00aff0;
+}
+
+h1.title small {
+    margin-top: -5px;
+}
+
+#container,
+.container {
+    padding: 0 1rem;
+}
+
+div.block {
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: white;
+}
+
+div.block h1 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    color: #00aff0;
+}
+
+div.block .timer {
+    margin-top: 1rem;
+}
+
+[class*="col-lg-"] {
+    float: left;
+    position: relative;
+}
+
+.col-lg-1-2 {
+    width: 50%;
+}
+
+.col-lg-1-5 {
+    width: 20%;
+}
+
+.col-lg-4-5 {
+    width: 80%;
+}
+
+.clearfix {
+    clear: both;
+    height: 0;
+}
+
+.w15 {
+    width: 15%;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.float-right {
+    float: right;
+}
+
+input[type="text"] {
+    height: 3rem;
+    padding: 6px 8px;
+    font-size: 12px;
+    line-height: 1.42857;
+    color: #555;
+    background: #F5F8F9 none;
+    border: 1px solid #C7D6DB;
+    border-radius: 3px;
+    -webkit-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s,box-shadow ease-in-out 0.15s;
+}
+
+.btn {
+    height: 3rem;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 6px 8px;
+    font-size: 12px;
+    line-height: 1.42857;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    user-select: none;
+    /* Default */
+    color: #363A41;
+    background: #fff none;
+    border: 1px solid #DEDEDE;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #00aff0;
+    border-color: #008abd;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.options img {
+    cursor: pointer;
+}
+
+#informations h2 {
+    border-bottom: 1px solid whitesmoke;
+}
