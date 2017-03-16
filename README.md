@@ -1,4 +1,4 @@
-# ![Logo](/home/debuss-a/Documents/GitHub/authenticator/authenticator.png) Authenticator
+# ![Logo](./authenticator.png) Authenticator
 
 ## About
 
